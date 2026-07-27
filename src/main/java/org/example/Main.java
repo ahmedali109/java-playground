@@ -23,13 +23,33 @@ public class Main {
         //endregion
 
         //region Input
-        boolean isLoggedIn = true;
-        String name = IO.readln("Enter your name: ");
-        IO.println(
-                """
-                %s%s
-                """.formatted(isLoggedIn ? "Welcome Back , " : "Please Login first , " , name)
-        );
+//        boolean isLoggedIn = true;
+//        String name = IO.readln("Enter your name: ");
+//        IO.println(
+//                """
+//                %s%s
+//                """.formatted(isLoggedIn ? "Welcome Back , " : "Please Login first , " , name)
+//        );
         //endregion
+
+        //region If Statement
+//        int grade = Integer.parseInt(IO.readln("Enter your grade : "));
+//        if(grade >= 85 && grade <= 100) {
+//            IO.println("Excellant");
+//        } else if(grade >= 75 && grade < 85){
+//            IO.println("Very Good");
+//        } else if(grade >= 60 && grade < 75){
+//            IO.println("Good");
+//        }
+//        else if(grade >= 50 && grade < 60){
+//            IO.println("Need to be Better... study more");
+//        } else if(grade >= 0 && grade < 50){
+//            IO.println("You are fail... study more");
+//        } else {
+//            IO.println("Invalid Degree");
+//        }
+
+        //endregion
+
     }
 }
