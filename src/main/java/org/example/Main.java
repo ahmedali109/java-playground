@@ -138,11 +138,22 @@ public class Main {
         //endregion
 
         //region Methods
-        int number = Integer.parseInt(IO.readln("Enter number : "));
-        IO.println("number after square %s".formatted(Square(number)));
-        IO.println("number after cube %s".formatted(Cube(number)));
-        IO.println("factorial of the number %s".formatted(Factorial(number)));
+//        int number = Integer.parseInt(IO.readln("Enter number : "));
+//        IO.println("number after square %s".formatted(Square(number)));
+//        IO.println("number after cube %s".formatted(Cube(number)));
+//        IO.println("factorial of the number %s".formatted(Factorial(number)));
         //endregion
 
+        //region Array
+        int arr[] = {1,2,3,4,5,6,7,8,9,10};
+        int size = arr.length;
+        for(int i = 0; i < size; i++){
+            IO.println("------------------------");
+            IO.println("%s after square = %s".formatted(arr[i] , Square(arr[i])));
+            IO.println("%s after cube = %s".formatted(arr[i] , Cube(arr[i])));
+            IO.println("%s after Factorial = %s".formatted(arr[i] , Factorial(arr[i])));
+            IO.println("------------------------");
+        }
+        //endregion
     }
 }
