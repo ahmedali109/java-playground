@@ -1,6 +1,21 @@
 package org.example;
 
 public class Main {
+    //region Methods
+    static int Square(int x){
+        return x*x;
+    }
+
+    static int Cube(int x){
+        return x*x*x;
+    }
+
+    static int Factorial(int x){
+        if(x == 1 || x == 0) return 1;
+        return x * Factorial(x - 1);
+    }
+    //endregion
+
     static void main() {
         //region Varibales and Data Types
         //        int age = 21;
@@ -101,25 +116,33 @@ public class Main {
         //endregion
 
         //region While Loop
-        int i = 1;
-        while (i <= 10){
-            IO.println(i);
-            i++;
-        }
-        IO.println("------------------------");
-        int j = 10;
-        while (j >= 1){
-            IO.println(j);
-            j--;
-        }
-        IO.println("------------------------");
-        int k = 10;
-        while (true){
-            IO.println(k);
-            k--;
-            if(k == 0) break;
-        }
-        IO.println("------------------------");
+//        int i = 1;
+//        while (i <= 10){
+//            IO.println(i);
+//            i++;
+//        }
+//        IO.println("------------------------");
+//        int j = 10;
+//        while (j >= 1){
+//            IO.println(j);
+//            j--;
+//        }
+//        IO.println("------------------------");
+//        int k = 10;
+//        while (true){
+//            IO.println(k);
+//            k--;
+//            if(k == 0) break;
+//        }
+//        IO.println("------------------------");
         //endregion
+
+        //region Methods
+        int number = Integer.parseInt(IO.readln("Enter number : "));
+        IO.println("number after square %s".formatted(Square(number)));
+        IO.println("number after cube %s".formatted(Cube(number)));
+        IO.println("factorial of the number %s".formatted(Factorial(number)));
+        //endregion
+
     }
 }
