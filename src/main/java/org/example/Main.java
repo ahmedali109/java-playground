@@ -78,26 +78,48 @@ public class Main {
         //endregion
 
         //region For loops
-        for(int i = 1; i <= 10; i++){
-            IO.println("i = %s".formatted(i));
-        }
-        IO.println("------------------------");
-        for(int i = 10; i > 0; i--){
-            IO.println("i = %s".formatted(i));
-        }
-        IO.println("------------------------");
+//        for(int i = 1; i <= 10; i++){
+//            IO.println("i = %s".formatted(i));
+//        }
+//        IO.println("------------------------");
+//        for(int i = 10; i > 0; i--){
+//            IO.println("i = %s".formatted(i));
+//        }
+//        IO.println("------------------------");
+//        int i = 1;
+//        for(; i <= 10; i++){
+//            IO.println("i = %s".formatted(i));
+//        }
+//        IO.println("------------------------");
+//        int j = 10;
+//        for(;; j--){
+//           if(j == 0) break;
+//           IO.println("j = %s".formatted(j));
+//        }
+//        IO.println("------------------------");
+
+        //endregion
+
+        //region While Loop
         int i = 1;
-        for(; i <= 10; i++){
-            IO.println("i = %s".formatted(i));
+        while (i <= 10){
+            IO.println(i);
+            i++;
         }
         IO.println("------------------------");
         int j = 10;
-        for(;; j--){
-           if(j == 0) break;
-           IO.println("j = %s".formatted(j));
+        while (j >= 1){
+            IO.println(j);
+            j--;
         }
         IO.println("------------------------");
-
+        int k = 10;
+        while (true){
+            IO.println(k);
+            k--;
+            if(k == 0) break;
+        }
+        IO.println("------------------------");
         //endregion
     }
 }
