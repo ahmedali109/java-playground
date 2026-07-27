@@ -51,5 +51,30 @@ public class Main {
 
         //endregion
 
+        //region Switch
+       double n1 = Double.parseDouble(IO.readln("Enter First Number: "));
+       char operator = IO.readln("Enter operator (+ - * /): ").charAt(0);
+       double n2 = Double.parseDouble(IO.readln("Enter Second Number: "));
+        switch (operator){
+            case '+':
+               IO.println(n1 + n2);
+                break;
+            case '-':
+                IO.println(n1 - n2);
+                break;
+            case '*':
+                IO.println(n1 * n2);
+                break;
+            case '/':
+                if(n2 == 0){
+                    IO.println("Cannot Divide by 0");
+                    return;
+                }
+                IO.println(n1 / n2);
+                break;
+            default:
+                IO.println("Invalid Option");
+        }
+        //endregion
     }
 }
