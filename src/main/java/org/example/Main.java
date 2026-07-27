@@ -145,15 +145,49 @@ public class Main {
         //endregion
 
         //region Array
-        int arr[] = {1,2,3,4,5,6,7,8,9,10};
-        int size = arr.length;
-        for(int i = 0; i < size; i++){
-            IO.println("------------------------");
-            IO.println("%s after square = %s".formatted(arr[i] , Square(arr[i])));
-            IO.println("%s after cube = %s".formatted(arr[i] , Cube(arr[i])));
-            IO.println("%s after Factorial = %s".formatted(arr[i] , Factorial(arr[i])));
-            IO.println("------------------------");
-        }
+//        int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//        int size = arr.length;
+//        for(int i = 0; i < size; i++){
+//            IO.println("------------------------");
+//            IO.println("%s after square = %s".formatted(arr[i] , Square(arr[i])));
+//            IO.println("%s after cube = %s".formatted(arr[i] , Cube(arr[i])));
+//            IO.println("%s after Factorial = %s".formatted(arr[i] , Factorial(arr[i])));
+//            IO.println("------------------------");
+//        }
+        //endregion
+
+        //region OOP
+        Car c1 = new Car();
+        c1.start();
+        c1.stop();
+        IO.println("------------------------");
+        Dog d1 = new Dog();
+        d1.name = "Rock";
+        d1.eat();
+        IO.println("------------------------");
+        Rectangle r1 = new Rectangle();
+        r1.draw();
+        IO.println("------------------------");
+        Trinagle t1 = new Trinagle();
+        t1.draw();
+        IO.println("------------------------");
+        Calculator calc = new Calculator();
+        int result = calc.add(5 , 4);
+        int total = calc.add(5 , 4 , 3);
+        IO.println("%s %s".formatted(result  , total));
+        IO.println("------------------------");
+        Developer dev = new Developer();
+        dev.calculateSalary();
+        IO.println("------------------------");
+        Manager m1 = new Manager();
+        m1.calculateSalary();
+        IO.println("------------------------");
+        VodafoneCash vc = new VodafoneCash();
+        vc.pay();
+        IO.println("------------------------");
+        Visa visa = new Visa();
+        visa.pay();
+        IO.println("------------------------");
         //endregion
     }
 }
